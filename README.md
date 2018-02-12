@@ -1,6 +1,10 @@
 # ratpack-openidconnect-example
 An example of using [OpenID Connect](http://openid.net/connect/) to authenticate with [Ratpack](http://www.ratpack.io).
 
+## Prerequisites
+
+## Running the Example
+
 ## Bugs and Feedback
 For bugs, questions and discussions please use the [Github Issues](https://github.com/gregwhitaker/ratpack-openidconnect-example/issues).
 
