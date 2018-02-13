@@ -15,14 +15,15 @@ sourceCompatibility = 1.8
 
 repositories {
     jcenter()
+    mavenCentral()
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
 dependencies {
     compile ratpack.dependency('guice')
 
-    compile 'org.pac4j:ratpack-pac4j:2.0.0-SNAPSHOT'
-    compile 'org.pac4j:pac4j-openid:2.0.0-SNAPSHOT'
+    compile 'org.pac4j:ratpack-pac4j:2.0.0'
+    compile 'org.pac4j:pac4j-oidc:2.2.1'
 
     runtime 'org.slf4j:slf4j-simple:1.7.22'
 }
