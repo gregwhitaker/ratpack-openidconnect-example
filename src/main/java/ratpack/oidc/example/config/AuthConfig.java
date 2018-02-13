@@ -5,5 +5,7 @@ package ratpack.oidc.example.config;
  */
 public class AuthConfig {
 
-    public String key;
+    public String clientId;
+
+    public String clientSecret;
 }

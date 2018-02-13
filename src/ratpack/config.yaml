@@ -1,2 +1,3 @@
 auth:
-  key: test
+  clientId: test
+  clientSecret: secret

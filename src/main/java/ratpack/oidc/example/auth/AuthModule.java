@@ -18,6 +18,9 @@ public class AuthModule extends AbstractModule {
     @Inject
     public GoogleOidcClient googleOidcClient(AuthConfig authConfig) {
         OidcConfiguration oidcConfig = new OidcConfiguration();
+        oidcConfig.setClientId(authConfig.clientId);
+        oidcConfig.setSecret(authConfig.clientSecret);
+        oidcConfig.setUseNonce(true);
 
         return new GoogleOidcClient(oidcConfig);
     }
