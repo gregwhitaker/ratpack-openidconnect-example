@@ -4,6 +4,7 @@ import org.pac4j.oidc.client.GoogleOidcClient;
 import ratpack.guice.Guice;
 import ratpack.oidc.example.api.ApiEndpoints;
 import ratpack.oidc.example.api.ApiModule;
+import ratpack.oidc.example.auth.AuthModule;
 import ratpack.oidc.example.config.AuthConfig;
 import ratpack.pac4j.RatpackPac4j;
 import ratpack.server.BaseDir;
@@ -21,7 +22,8 @@ public class Main {
                         .build()
                 )
                 .registry(Guice.registry(b -> b
-                        .module(ApiModule.class))
+                        .module(ApiModule.class)
+                        .module(AuthModule.class))
                 )
                 .handlers(chain -> chain
                         .all(RatpackPac4j.authenticator(chain.getRegistry().get(GoogleOidcClient.class)))
