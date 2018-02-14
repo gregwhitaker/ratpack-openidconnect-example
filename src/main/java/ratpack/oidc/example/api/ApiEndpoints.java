@@ -23,7 +23,7 @@ public class ApiEndpoints implements Action<Chain> {
         });
 
         // Logout
-        chain.path("logout.html", ctx ->
+        chain.path("logout", ctx ->
                 RatpackPac4j.logout(ctx).then(() -> ctx.redirect("index.html"))
         );
 
