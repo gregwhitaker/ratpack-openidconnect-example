@@ -1,4 +1,6 @@
 # ratpack-openidconnect-example
+[![Build Status](https://travis-ci.org/gregwhitaker/ratpack-openidconnect-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/ratpack-openidconnect-example)
+
 An example of using Google as an [OpenID Connect](http://openid.net/connect/) provider to authenticate with [Ratpack](http://www.ratpack.io).
 
 ## Prerequisites
