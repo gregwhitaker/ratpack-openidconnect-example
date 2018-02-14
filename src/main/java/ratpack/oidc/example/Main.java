@@ -10,6 +10,11 @@ import ratpack.pac4j.RatpackPac4j;
 import ratpack.server.BaseDir;
 import ratpack.server.RatpackServer;
 
+import static ratpack.handling.Handlers.redirect;
+
+/**
+ * Starts the ratpack-openidconnect-example application.
+ */
 public class Main {
 
     public static void main(String... args) throws Exception {
@@ -26,6 +31,7 @@ public class Main {
                         .module(AuthModule.class))
                 )
                 .handlers(chain -> chain
+                        .path(redirect(301, "index.html"))
                         .all(RatpackPac4j.authenticator(chain.getRegistry().get(GoogleOidcClient.class)))
                         .insert(ApiEndpoints.class)
                         .files(f -> f.dir("public").indexFiles("index.html"))

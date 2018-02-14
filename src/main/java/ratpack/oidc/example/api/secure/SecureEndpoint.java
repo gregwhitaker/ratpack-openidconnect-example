@@ -10,6 +10,6 @@ public class SecureEndpoint implements Handler {
 
     @Override
     public void handle(Context ctx) throws Exception {
-
+        ctx.render("This is the secure endpoint");
     }
 }
