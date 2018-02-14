@@ -8,7 +8,7 @@ This example requires that you configure a resource in the [Google API Console](
 
 1. Open the [Google API Credentials Console](https://console.developers.google.com/projectselector/apis/credentials?supportedpurview=project&angularJsUrl=%2Fprojectselector%2Fapis%2Fcredentials%3Fsupportedpurview%3Dproject&authuser=2)
 
-2. Select `Create Project` in the dialog box.
+2. Select `Create` in the dialog box to create a new API project.
 
 3. Give the project a name.
 
