@@ -21,6 +21,7 @@ repositories {
 
 dependencies {
     compile ratpack.dependency('guice')
+    compile ratpack.dependency('groovy')
 
     compile 'org.pac4j:ratpack-pac4j:2.0.0'
     compile 'org.pac4j:pac4j-oidc:2.2.1'

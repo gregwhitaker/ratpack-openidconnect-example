@@ -1,6 +1,7 @@
 package ratpack.oidc.example;
 
 import org.pac4j.oidc.client.GoogleOidcClient;
+import ratpack.groovy.template.TextTemplateModule;
 import ratpack.guice.Guice;
 import ratpack.oidc.example.api.ApiEndpoints;
 import ratpack.oidc.example.api.ApiModule;
@@ -9,6 +10,7 @@ import ratpack.oidc.example.config.AuthConfig;
 import ratpack.pac4j.RatpackPac4j;
 import ratpack.server.BaseDir;
 import ratpack.server.RatpackServer;
+import ratpack.session.SessionModule;
 
 import static ratpack.handling.Handlers.redirect;
 
@@ -28,13 +30,14 @@ public class Main {
                 )
                 .registry(Guice.registry(b -> b
                         .module(ApiModule.class)
-                        .module(AuthModule.class))
+                        .module(AuthModule.class)
+                        .module(TextTemplateModule.class)
+                        .module(SessionModule.class))
                 )
                 .handlers(chain -> chain
                         .path(redirect(301, "index.html"))
                         .all(RatpackPac4j.authenticator(chain.getRegistry().get(GoogleOidcClient.class)))
                         .insert(ApiEndpoints.class)
-                        .files(f -> f.dir("public").indexFiles("index.html"))
                 )
         );
     }
