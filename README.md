@@ -4,7 +4,7 @@
 An example of using Google as an [OpenID Connect](http://openid.net/connect/) provider to authenticate with [Ratpack](http://www.ratpack.io).
 
 ## Prerequisites
-This example requires that you configure a resource in the [Google API Console](https://console.developers.google.com/projectselector/apis/credentials?supportedpurview=project&angularJsUrl=%2Fprojectselector%2Fapis%2Fcredentials%3Fsupportedpurview%3Dproject&authuser=2) before running.
+This example requires that you configure a Google API resource before running.
 
 1. Open the [Google API Credentials Console](https://console.developers.google.com/projectselector/apis/credentials?supportedpurview=project&angularJsUrl=%2Fprojectselector%2Fapis%2Fcredentials%3Fsupportedpurview%3Dproject&authuser=2)
 
