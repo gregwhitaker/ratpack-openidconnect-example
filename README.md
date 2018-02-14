@@ -2,6 +2,25 @@
 An example of using Google as an [OpenID Connect](http://openid.net/connect/) provider to authenticate with [Ratpack](http://www.ratpack.io).
 
 ## Prerequisites
+This example requires that you configure a resource in the [Google API Console](https://console.developers.google.com/projectselector/apis/credentials?supportedpurview=project&angularJsUrl=%2Fprojectselector%2Fapis%2Fcredentials%3Fsupportedpurview%3Dproject&authuser=2) before running.
+
+1. Open the [Google API Credentials Console](https://console.developers.google.com/projectselector/apis/credentials?supportedpurview=project&angularJsUrl=%2Fprojectselector%2Fapis%2Fcredentials%3Fsupportedpurview%3Dproject&authuser=2)
+
+2. Select `Create Project` in the dialog box.
+
+3. Give the project a name.
+
+4. In the `Create credentials` dropdown select `OAuth client ID`.
+
+5. Follow the prompts for creating a client id.
+
+6. When prompted for Application Type select `Web Application`
+
+7. In the `Authorized redirect URIs` add: `http://localhost:5050/authenticator?client_name=GoogleOidcClient`
+
+8. Click the `Create` button.
+
+9. Copy the newly created client id and client secret for use in the example.
 
 ## Running the Example
 The example can be run using the following Gradle command:
