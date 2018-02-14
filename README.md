@@ -1,9 +1,16 @@
 # ratpack-openidconnect-example
 An example of using [OpenID Connect](http://openid.net/connect/) to authenticate with [Ratpack](http://www.ratpack.io).
 
+This example uses Google as the OpenID Connect provider, but can easily be changed to any service that implements the OpenID Connect standard.
+
 ## Prerequisites
 
 ## Running the Example
+The example can be run using the following Gradle command:
+
+    $ ./gradlew run
+
+Once the application has started, point your web browser to [http://localhost:5050](http://localhost:5050) to access the test page.
 
 ## Bugs and Feedback
 For bugs, questions and discussions please use the [Github Issues](https://github.com/gregwhitaker/ratpack-openidconnect-example/issues).
