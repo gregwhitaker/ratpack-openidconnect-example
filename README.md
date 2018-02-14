@@ -1,5 +1,5 @@
 # ratpack-openidconnect-example
-An example of using Google as an [OpenID Connect](http://openid.net/connect/) to authenticate with [Ratpack](http://www.ratpack.io).
+An example of using Google as an [OpenID Connect](http://openid.net/connect/) provider to authenticate with [Ratpack](http://www.ratpack.io).
 
 ## Prerequisites
 
