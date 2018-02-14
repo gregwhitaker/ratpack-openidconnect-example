@@ -6,7 +6,7 @@ An example of using Google as an [OpenID Connect](http://openid.net/connect/) pr
 ## Running the Example
 The example can be run using the following Gradle command:
 
-    $ ./gradlew run
+    $ RATPACK_AUTH__CLIENT_ID={client id} RATPACK_AUTH__CLIENT_SECRET={client secret} ./gradlew run
 
 Once the application has started, point your web browser to [http://localhost:5050](http://localhost:5050) to access the test page.
 
